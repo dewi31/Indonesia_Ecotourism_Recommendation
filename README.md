@@ -122,14 +122,37 @@ Sistem rekomendasi content based filtering ada beberapa tahapan yaitu sebagai be
 #### Cosine Similarity
 *Cosine similarity* digunakan untuk menghitung kesamaan antara ekowisata satu dengan lainnya berdasarkan kategori. Untuk menjalankan *cosine similarity* pada proyek ini digunakan fungsi cosine_similarity dari library sklearn. Fungsi cosine_similarity akan mengasilkan nilai dari range 0 hingga 1, yang artinya adalah jika kesamaan ekowisata satu dengan yang lainnya hasilnya 0 maka bisa dikatakan ekowisata tersebut sangat berbeda dan tidak memiliki hubungan kesamaan sedikitpun, dan sebaliknya jika kesamaan yang dihasilkan adalah 1 maka bisa dikatakan ekowisata tersebut memiliki kesamaan sempurna.
 
-#### Hasil Rekomendasi
+#### Hasil Pengujian Rekomendasi
+Setelah data kategori ekowisata dikonversi menjadi matriks dengan menggunakan TF-IDF Vectorizer, dan tingkat kesamaan ditentukan dengan menggunakan cosine similarity, selanjutnya dilakukan pengujian terhadap sistem rekomendasi. Hasil pengujian tersebut dapat dilihat sebagai berikut:
+
+Diambil salah satu contoh ekowisata,
+
+|   place_ID   |   place_name  | category |
+|---------------|--------|---------------|
+| 151       | Museum Ullen Sentalu | Budaya |
+
+Tabel 3. Salah satu contoh ekowisata
+
+Berikut adalah hasil rekomendasi tempat ekowisata berdasarkan kategori,
+
+|    place_name  | category  | 
+|---------------|--------|
+|  Desa Wisata Jodipan	     |  Budaya | 
+| Desa Wisata Sade         |  Budaya |   
+|   Candi Gedong Songo       |  Budaya | 
+|      Saung Angklung Mang Udjo     |  Budaya  |
+|   Setu Babakan       |  Budaya  | 
+
+Tabel 4. Hasil rekomendasi ekowisata
 
 ## Evaluation
-Pada bagian ini Anda perlu menyebutkan metrik evaluasi yang digunakan. Kemudian, jelaskan hasil proyek berdasarkan metrik evaluasi tersebut.
+Pada tahap evaluasi, proyek ini menggunakan persamaan berikut,
 
-Ingatlah, metrik evaluasi yang digunakan harus sesuai dengan konteks data, problem statement, dan solusi yang diinginkan.
-
-**Rubrik/Kriteria Tambahan (Opsional)**: 
-- Menjelaskan formula metrik dan bagaimana metrik tersebut bekerja.
+$$ presisi = {rekomendasi yang sesuai \over banyaknya rekomendasi yang muncul} $$
 
 ## Reference
+
+[1] Mu’tashim, M. R., & Indahsari, K. (2021). Pengembangan Ekowisata di Indonesia. Jurnal Usahid Solo, 1(1), 295–308.
+[2] Muhamad, N. (2023). Indonesia Masuk Daftar Destinasi Ekowisata Terbaik di Dunia. Databoks.Katadata.Co.Id. https://databoks.katadata.co.id/datapublish/2023/08/10/indonesia-masuk-daftar-destinasi-ekowisata-terbaik-di-dunia, Diakses pada 09, Maret 2023
+
+
