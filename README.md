@@ -70,6 +70,7 @@ Univariate Analysis digunakan untuk menganalisis tiap variabel dalam suatu data
 | max           | 5.00    | 
 
 Tabel 1. Deskripsi statistik data rating
+
 Pada Tabel 1 dapat dilihat bahwa nilai rating terendah adalah 3.40 dari 5 dan nilai rating tertinggi adalah 5.00 dari 5.
 
 #### Analisis distribusi rata-rata data `rating`
@@ -77,6 +78,7 @@ Pada Tabel 1 dapat dilihat bahwa nilai rating terendah adalah 3.40 dari 5 dan ni
 ![image](https://github.com/dewi31/Indonesia_Ecotourism_Recommendation/assets/87901348/41873bba-36fa-432d-a5ad-6af969ab0cb9)
 
 Gambar 1. Persebaran rating ekowisata
+
 Pada Gambar 1. dapat dilihat bahwa rata-rata rating ekowisata tersebar dari rating 3.9 hingga 5.0.
 
 #### Analisis fitur kategorik pada `category` ekowisata
@@ -84,6 +86,7 @@ Pada Gambar 1. dapat dilihat bahwa rata-rata rating ekowisata tersebar dari rati
 ![image](https://github.com/dewi31/Indonesia_Ecotourism_Recommendation/assets/87901348/69c256ea-e6bf-4c74-b2a4-42be8b0a1f21)
 
 Gambar 2. Kategori pada ekowisata
+
 Dari Gambar 2. dapat diambil kesimpulan bahwa satu tempat ekowisata memiliki beberapa kategori atau satu kategori. Dari gambar tersebut juga dapat dilihat bahwa kategori cagar alam memiliki jumlah data yang paling banyak yakni 41 tempat ekowisata.
 
 #### Analisis fitur kategorik pada `city` ekowisata
@@ -96,6 +99,7 @@ Dari Gambar 2. dapat diambil kesimpulan bahwa satu tempat ekowisata memiliki beb
 | Jakarta          | 12  | 
 
 Tabel 2. Top-4 kota dengan ekowisata terbanyak
+
 Pada Tabel 2 merupakan 4 kota dengan jumlah ekowisata terbanyak. Kategori kota lainnya hanya memiliki ekowisata berkisar 1-3.
 
 ## Data Preparation
