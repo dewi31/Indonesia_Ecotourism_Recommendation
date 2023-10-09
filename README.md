@@ -83,11 +83,32 @@ Pada Gambar 1. dapat dilihat bahwa rata-rata rating ekowisata tersebar dari rati
 
 #### Analisis fitur kategorik pada `category` ekowisata
 
-![image](https://github.com/dewi31/Indonesia_Ecotourism_Recommendation/assets/87901348/69c256ea-e6bf-4c74-b2a4-42be8b0a1f21)
+|   category  |   jumlah | 
+|---------------|--------|
+| Bahari,Cagar Alam        | 29  | 
+| Bahari,Cagar Alam,Taman Hiburan,Taman Nasional          | 1 |   
+| Bahari,Taman Hiburan         | 2  | 
+| Bahari,Taman Hiburan,Taman Nasional          | 2  |
+| Budaya             | 6  | 
+| Budaya,Cagar Alam         | 35 |   
+| Budaya,Cagar Alam,Desa Wisata         | 1  | 
+| Budaya,Cagar Alam,Taman Nasional          | 2  |
+| Budaya,Desa Wisata        | 2  | 
+| Budaya,Taman Hiburan         | 4 |   
+| Budaya,Taman Nasional         | 3  | 
+| Cagar Alam          | 41  |
+|Cagar Alam,Desa Wisata               | 2  | 
+| Cagar Alam,Taman Hiburan         | 12 |   
+| Cagar Alam,Taman Nasional         | 18  | 
+| Desa Wisata         | 6  |
+|Desa Wisata,Taman Hiburan                | 3  | 
+| Taman Hiburan         | 7 |   
+| Taman Nasional         | 1  | 
+| Taman Nasional,Cagar Alam        | 5  |
 
-Gambar 2. Kategori pada ekowisata
+Tabel 2. Kategori pada ekowisata
 
-Dari Gambar 2. dapat diambil kesimpulan bahwa satu tempat ekowisata memiliki beberapa kategori atau satu kategori. Dari gambar tersebut juga dapat dilihat bahwa kategori cagar alam memiliki jumlah data yang paling banyak yakni 41 tempat ekowisata.
+Dari Tabel 2. dapat diambil kesimpulan bahwa satu tempat ekowisata memiliki beberapa kategori atau satu kategori. Dari gambar tersebut juga dapat dilihat bahwa kategori cagar alam memiliki jumlah data yang paling banyak yakni 41 tempat ekowisata.
 
 #### Analisis fitur kategorik pada `city` ekowisata
 
@@ -98,9 +119,9 @@ Dari Gambar 2. dapat diambil kesimpulan bahwa satu tempat ekowisata memiliki beb
 | Semarang          | 17  | 
 | Jakarta          | 12  | 
 
-Tabel 2. Top-4 kota dengan ekowisata terbanyak
+Tabel 3. Top-4 kota dengan ekowisata terbanyak
 
-Pada Tabel 2 merupakan 4 kota dengan jumlah ekowisata terbanyak. Kategori kota lainnya hanya memiliki ekowisata berkisar 1-3.
+Pada Tabel 3 merupakan 4 kota dengan jumlah ekowisata terbanyak. Kategori kota lainnya hanya memiliki ekowisata berkisar 1-3.
 
 ## Data Preparation
 Tahap ini bertujuan untuk mempersiapkan data yang akan digunakan untuk bisa masuk ke dalam tahapan *modelling*. Di sini dilakukan penghapusan kolom yang tidak diperlukan , pengecekan, dan pembersihkan data yang bernilai kosong.
@@ -131,7 +152,7 @@ Diambil salah satu contoh ekowisata,
 |---------------|--------|---------------|
 | 151       | Museum Ullen Sentalu | Budaya |
 
-Tabel 3. Salah satu contoh ekowisata
+Tabel 4. Salah satu contoh ekowisata
 
 Berikut adalah hasil rekomendasi tempat ekowisata berdasarkan kategori,
 
@@ -143,7 +164,7 @@ Berikut adalah hasil rekomendasi tempat ekowisata berdasarkan kategori,
 |      Saung Angklung Mang Udjo     |  Budaya  |
 |   Setu Babakan       |  Budaya  | 
 
-Tabel 4. Hasil rekomendasi ekowisata
+Tabel 5. Hasil rekomendasi ekowisata
 
 ## Evaluation
 Pada tahap evaluasi, proyek ini menggunakan persamaan berikut,
