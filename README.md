@@ -58,32 +58,56 @@ Univariate Analysis digunakan untuk menganalisis tiap variabel dalam suatu data
 
 #### Analisis data `rating`
 
-|   Parameter   |   age  | a
-|---------------|--------|-------------------|-------|
-| count         | 4981   |   4981            | 4981  |
-| mean          | 43.42  |   105.94          | 28.50 |
-| std           | 22.66  |   45.08           | 6.79  |
-| min           | 0.08   |   55.12           | 14    |
-| 25%           | 25     |   77.23           | 23.7  |
-| 50%           | 45     |   91.85           | 28.1  |
-| 75%           | 61     |   113.86          | 32.6  |
-| max           | 82     |   271.74          | 48.9  |
+|   Parameter   |   rating  | 
+|---------------|--------|
+| count         | 182  | 
+| mean          | 4.42 |   
+| std           | 0.22  | 
+| min           | 3.40   |
+| 25%           | 4.30     | 
+| 50%           | 4.40     | 
+| 75%           | 4.60     |  
+| max           | 5.00    | 
 
 Tabel 1. Deskripsi statistik data rating
+Pada Tabel 1 dapat dilihat bahwa nilai rating terendah adalah 3.40 dari 5 dan nilai rating tertinggi adalah 5.00 dari 5.
+
+#### Analisis distribusi rata-rata data `rating`
+
+![image](https://github.com/dewi31/Indonesia_Ecotourism_Recommendation/assets/87901348/41873bba-36fa-432d-a5ad-6af969ab0cb9)
+
+Gambar 1. Persebaran rating ekowisata
+Pada Gambar 1. dapat dilihat bahwa rata-rata rating ekowisata tersebar dari rating 3.9 hingga 5.0.
+
+#### Analisis fitur kategorik pada `category` ekowisata
+
+![image](https://github.com/dewi31/Indonesia_Ecotourism_Recommendation/assets/87901348/69c256ea-e6bf-4c74-b2a4-42be8b0a1f21)
+
+Gambar 2. Kategori pada ekowisata
+Dari Gambar 2. dapat diambil kesimpulan bahwa satu tempat ekowisata memiliki beberapa kategori atau satu kategori. Dari gambar tersebut juga dapat dilihat bahwa kategori cagar alam memiliki jumlah data yang paling banyak yakni 41 tempat ekowisata.
+
+#### Analisis fitur kategorik pada `city` ekowisata
+
+|   Kota  |   Jumlah | 
+|---------------|--------|
+| Yogyakarta         | 53  | 
+| Bandung          | 36 |   
+| Semarang          | 17  | 
+| Jakarta          | 12  | 
+
+Tabel 2. Top-4 kota dengan ekowisata terbanyak
+Pada Tabel 2 merupakan 4 kota dengan jumlah ekowisata terbanyak. Kategori kota lainnya hanya memiliki ekowisata berkisar 1-3.
 
 ## Data Preparation
-Pada bagian ini Anda menerapkan dan menyebutkan teknik data preparation yang dilakukan. Teknik yang digunakan pada notebook dan laporan harus berurutan.
+Tahap ini bertujuan untuk mempersiapkan data yang akan digunakan untuk bisa masuk ke dalam tahapan *modelling*. Di sini dilakukan penghapusan kolom yang tidak diperlukan , pengecekan, dan pembersihkan data yang bernilai kosong.
 
-**Rubrik/Kriteria Tambahan (Opsional)**: 
-- Menjelaskan proses data preparation yang dilakukan
-- Menjelaskan alasan mengapa diperlukan tahapan data preparation tersebut.
+1. Penghapusan kolom yang tidak diperlukan.
+   Pada dataset `eco_place.csv` variabel yang dibutuhkan diantaranya `place_id`, `place_name`, dan `category` karena digunakan untuk membuat model sistem rekomendasi. Variabel selain ketiga tersebut kemudian dihapus
+2. Pengecekan data yang bernilai kosong
+   Berdasarkan hasil pengecekan, data pada `place_id`, `place_name`, dan `category` tidak ada yang bernilai kosong. 
 
 ## Modeling
-Tahapan ini membahas mengenai model sisten rekomendasi yang Anda buat untuk menyelesaikan permasalahan. Sajikan top-N recommendation sebagai output.
 
-**Rubrik/Kriteria Tambahan (Opsional)**: 
-- Menyajikan dua solusi rekomendasi dengan algoritma yang berbeda.
-- Menjelaskan kelebihan dan kekurangan dari solusi/pendekatan yang dipilih.
 
 ## Evaluation
 Pada bagian ini Anda perlu menyebutkan metrik evaluasi yang digunakan. Kemudian, jelaskan hasil proyek berdasarkan metrik evaluasi tersebut.
