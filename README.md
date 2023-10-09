@@ -112,6 +112,17 @@ Tahap ini bertujuan untuk mempersiapkan data yang akan digunakan untuk bisa masu
 
 ## Modeling
 
+Teknik yang digunakan pada proyek ini adalah content-based filtering recommendation. Content Based Filtering bekerja dengan mencocokan tempat ekowisata dengan ekowisata yang lainnya yang memiliki kategori/jenis ekowisata yang sama, dengan demikian yang akan direkomendasikan kepada wisatawan adalah tempat ekowisata yang memiliki kategori sama atau hampir sama dengan tempat ekowisata yang dikunjungi sebelumnya. Contohnya Desa Wisata Kinahrejo yang memiliki kategori Desa Wisata maka sistem rekomendasi akan merekomendasikan ekowisata Desa Wisata Nglanggeran.
+
+Sistem rekomendasi content based filtering ada beberapa tahapan yaitu sebagai berikut :
+
+#### TF-IDF Vectorizer
+*Term frequency Inverse document frequency* (TF-IDF) adalah rumus statistik untuk mengubah dokumen teks menjadi vektor berdasarkan relevansi kata. Hal ini didasarkan pada model kantong kata untuk membuat matriks yang berisi informasi tentang kata-kata yang kurang relevan dan paling relevan dalam dokumen. 
+
+#### Cosine Similarity
+*Cosine similarity* digunakan untuk menghitung kesamaan antara ekowisata satu dengan lainnya berdasarkan kategori. Untuk menjalankan *cosine similarity* pada proyek ini digunakan fungsi cosine_similarity dari library sklearn. Fungsi cosine_similarity akan mengasilkan nilai dari range 0 hingga 1, yang artinya adalah jika kesamaan ekowisata satu dengan yang lainnya hasilnya 0 maka bisa dikatakan ekowisata tersebut sangat berbeda dan tidak memiliki hubungan kesamaan sedikitpun, dan sebaliknya jika kesamaan yang dihasilkan adalah 1 maka bisa dikatakan ekowisata tersebut memiliki kesamaan sempurna.
+
+#### Hasil Rekomendasi
 
 ## Evaluation
 Pada bagian ini Anda perlu menyebutkan metrik evaluasi yang digunakan. Kemudian, jelaskan hasil proyek berdasarkan metrik evaluasi tersebut.
@@ -121,8 +132,4 @@ Ingatlah, metrik evaluasi yang digunakan harus sesuai dengan konteks data, probl
 **Rubrik/Kriteria Tambahan (Opsional)**: 
 - Menjelaskan formula metrik dan bagaimana metrik tersebut bekerja.
 
-**---Ini adalah bagian akhir laporan---**
-
-_Catatan:_
-- _Anda dapat menambahkan gambar, kode, atau tabel ke dalam laporan jika diperlukan. Temukan caranya pada contoh dokumen markdown di situs editor [Dillinger](https://dillinger.io/), [Github Guides: Mastering markdown](https://guides.github.com/features/mastering-markdown/), atau sumber lain di internet. Semangat!_
-- Jika terdapat penjelasan yang harus menyertakan code snippet, tuliskan dengan sewajarnya. Tidak perlu menuliskan keseluruhan kode project, cukup bagian yang ingin dijelaskan saja.
+## Reference
