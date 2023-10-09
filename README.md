@@ -148,13 +148,14 @@ Tabel 4. Hasil rekomendasi ekowisata
 ## Evaluation
 Pada tahap evaluasi, proyek ini menggunakan persamaan berikut,
 
-$$ presisi = {rekomendasi_yang_sesuai \over banyaknya_rekomendasi_yang_muncul} $$
+$$ presisi = \text{ rekomendasi yang sesuai /over banyaknya rekomendasi yang muncul } $$
 
 Karena pada hasil pengujian rekomendasi memiliki 5 rekomendasi yang muncul dan semuanya sesuai dengan kategori maka presisi sistem rekomendasi proyek ini adalah 5/5 atau 100%.
 
 ## Reference
 
 [1] Mu’tashim, M. R., & Indahsari, K. (2021). Pengembangan Ekowisata di Indonesia. Jurnal Usahid Solo, 1(1), 295–308.
+
 [2] Muhamad, N. (2023). Indonesia Masuk Daftar Destinasi Ekowisata Terbaik di Dunia. Databoks.Katadata.Co.Id. https://databoks.katadata.co.id/datapublish/2023/08/10/indonesia-masuk-daftar-destinasi-ekowisata-terbaik-di-dunia, Diakses pada 09, Maret 2023
 
 
