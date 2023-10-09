@@ -148,7 +148,9 @@ Tabel 4. Hasil rekomendasi ekowisata
 ## Evaluation
 Pada tahap evaluasi, proyek ini menggunakan persamaan berikut,
 
-$$ presisi = {rekomendasi yang sesuai \over banyaknya rekomendasi yang muncul} $$
+$$ presisi = {rekomendasi_yang_sesuai \over banyaknya_rekomendasi_yang_muncul} $$
+
+Karena pada hasil pengujian rekomendasi memiliki 5 rekomendasi yang muncul dan semuanya sesuai dengan kategori maka presisi sistem rekomendasi proyek ini adalah 5/5 atau 100%.
 
 ## Reference
 
