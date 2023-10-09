@@ -29,11 +29,47 @@ Solusi yang dapat dilakukan untuk mencapai tujuan proyek ini diantaranya:
 3. Melakukan pembuatan model rekomendasi dengan pendekatan *content based filtering*. Pendekatan *Content-based filtering* bertujuan untuk memberikan rekomendasi berdasarkan kemiripan atribut dari item atau barang yang disukai. 
 
 ## Data Understanding
-Dataset yang digunakan dalam proyek ini adalah dataset [Indonesia's Ecotourism](https://www.kaggle.com/datasets/farazbeniqnomf/indonesiaecotourism?select=eco_rating.csv) yang diambil dari *Kaggle* dengan eco_place.csv sebagai dataset yang digunakan.
+Dataset yang digunakan dalam proyek ini adalah dataset [Indonesia's Ecotourism](https://www.kaggle.com/datasets/farazbeniqnomf/indonesiaecotourism?select=eco_rating.csv) yang diambil dari *Kaggle* dengan `eco_place.csv` sebagai dataset yang digunakan.
 
-Selanjutnya, uraikanlah seluruh variabel atau fitur pada data. Sebagai contoh:  
+Berikut informasi pada dataset `eco_place.csv` :
++ Dataset memiliki format CSV.
++ Dataset memiliki 182 sample dengan 13 fitur.
++ Dataset memiliki 1 fitur bertipe float(64), 1 fitur bertipe int64, dan 11 fitur bertipe object.
++ Terdapat missing value pada dataset.
 
+### Variabel-variabel pada dataset:
++ place_id = ID dari setiap tempat ekowisata
++ place_name = Nama tempat ekowisata
++ place_description = Deskripsi dari tempat ekowisata
++ category = Kategoti ekowisata (Bahari, Tempat Wisata, Budaya, dll)
++ city = Kota dari tempat ekowisata
++ price = Harga masuk tempat ekowisata
++ rating = rating tempat ekowisata
++ description_location = Alamat tempat ekowisata
++ place_img = link foto tempat ekowisata
++ gallery_photo_img1 = link foto keadaan di dalam tempat ekowisata ke-1
++ gallery_photo_img2 = link foto keadaan di dalam tempat ekowisata ke-2
++ gallery_photo_img3 = link foto keadaan di dalam tempat ekowisata ke-3
++ place_map = link alamat untuk menuju tempat ekowisata
 
+### Univariate Analysis
+
+Univariate Analysis digunakan untuk menganalisis tiap variabel dalam suatu data
+
+#### Analisis data `rating`
+
+|   Parameter   |   age  | a
+|---------------|--------|-------------------|-------|
+| count         | 4981   |   4981            | 4981  |
+| mean          | 43.42  |   105.94          | 28.50 |
+| std           | 22.66  |   45.08           | 6.79  |
+| min           | 0.08   |   55.12           | 14    |
+| 25%           | 25     |   77.23           | 23.7  |
+| 50%           | 45     |   91.85           | 28.1  |
+| 75%           | 61     |   113.86          | 32.6  |
+| max           | 82     |   271.74          | 48.9  |
+
+Tabel 1. Deskripsi statistik data rating
 
 ## Data Preparation
 Pada bagian ini Anda menerapkan dan menyebutkan teknik data preparation yang dilakukan. Teknik yang digunakan pada notebook dan laporan harus berurutan.
